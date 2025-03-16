@@ -36,14 +36,20 @@ export default function Navbar() {
         <a href="#" className="text-gray-200 hover:text-white transition">
           Home
         </a>
-        <a href="#aboutUs" className="text-gray-200 hover:text-white transition">
+        <a href="#scan" className="text-gray-200 hover:text-white transition">
+          Scan
+        </a>
+        <a
+          href="#aboutUs"
+          className="text-gray-200 hover:text-white transition"
+        >
           About Us
         </a>
-        <a href="#features" className="text-gray-200 hover:text-white transition">
-          Features
-        </a>
-        <a href="#faq" className="text-gray-200 hover:text-white transition">
-          FAQ
+        <a
+          href="#roadmap"
+          className="text-gray-200 hover:text-white transition"
+        >
+          Roadmap
         </a>
       </div>
 
@@ -74,14 +80,20 @@ export default function Navbar() {
         <a href="#" className="text-gray-200 hover:text-white transition">
           Home
         </a>
-        <a href="#aboutUs" className="text-gray-200 hover:text-white transition">
+        <a href="#scan" className="text-gray-200 hover:text-white transition">
+          Scan
+        </a>
+        <a
+          href="#aboutUs"
+          className="text-gray-200 hover:text-white transition"
+        >
           About Us
         </a>
-        <a href="#features" className="text-gray-200 hover:text-white transition">
-          Features
-        </a>
-        <a href="#faq" className="text-gray-200 hover:text-white transition">
-          FAQ
+        <a
+          href="#roadmap"
+          className="text-gray-200 hover:text-white transition"
+        >
+          Roadmap
         </a>
         <button className="bg-white text-teal-900 px-4 py-2 rounded-full font-medium shadow-md hover:bg-gray-100 transition">
           Connect Wallet

@@ -16,10 +16,34 @@ export function ModernFooter() {
 
         {/* Right - Social Links */}
         <div className="flex gap-6 mt-6 md:mt-0">
-          <FooterIcon href="https://github.com/scanwithpavise" icon={<FaGithub />} label="GitHub" />
-          <FooterIcon href="https://pavise.gitbook.io/pavise" icon={<FaBook />} label="Docs" />
-          <FooterIcon href="https://x.com/ScanWithPavise" icon={<FaXTwitter />} label="Twitter" />
-          <FooterIcon href="https://t.me/PavisePortal" icon={<FaTelegram />} label="Telegram" />
+          <FooterIcon
+            href="https://github.com/scanwithpavise"
+            icon={<FaGithub />}
+            label="GitHub"
+          />
+          <FooterIcon
+            href="https://pavise.gitbook.io/pavise"
+            icon={<FaBook />}
+            label="Docs"
+          />
+          <FooterIcon
+            href="https://x.com/ScanWithPavise"
+            icon={<FaXTwitter />}
+            label="Twitter"
+          />
+          <FooterIcon
+            href="https://t.me/PavisePortal"
+            icon={<FaTelegram />}
+            label="Telegram"
+          />
+        </div>
+      </div>
+      <div className="flex justify-center items-center gap-4">
+        <div>
+          <a className="text-white hover:text-yellow-500">Discalimer</a>
+        </div>
+        <div>
+          <a className="text-white hover:text-yellow-500">Data Protection</a>
         </div>
       </div>
     </footer>

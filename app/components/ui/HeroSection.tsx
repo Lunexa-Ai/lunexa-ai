@@ -90,9 +90,9 @@ export default function Hero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
-        {/* <Button className="px-14 py-4 text-xl font-semibold flex items-center gap-3 bg-gradient-to-r from-teal-500 to-cyan-500 text-white shadow-xl hover:scale-110 transition-transform">
-          Get Started <ArrowRight size={24} />
-        </Button> */}
+        <a href="#scan" className="px-14 py-4 text-xl font-semibold rounded-full flex items-center gap-3 bg-gradient-to-r from-teal-500 to-cyan-500 text-white shadow-xl hover:scale-110 transition-transform">
+          Scan Images <ArrowRight size={24} />
+        </a>
       </motion.div>
 
       <style jsx>{`
