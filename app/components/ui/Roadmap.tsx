@@ -41,11 +41,6 @@ const phases = [
         description: "Our team is working hard to integrate the entire system.",
         time: "On Progress",
       },
-      {
-        title: "Global Impact",
-        description: "Collaborate with international healthcare organizations.",
-        time: "On Progress",
-      },
     ],
   },
   {
