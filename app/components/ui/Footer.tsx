@@ -40,7 +40,7 @@ export function ModernFooter() {
       </div>
       <div className="flex justify-center items-center gap-4">
         <div>
-          <a className="text-white hover:text-yellow-500">Discalimer</a>
+          <a className="text-white hover:text-yellow-500">Disclaimer</a>
         </div>
         <div>
           <a className="text-white hover:text-yellow-500">Data Protection</a>
