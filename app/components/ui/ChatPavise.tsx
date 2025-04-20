@@ -70,7 +70,7 @@ export function ChatPaviseAI() {
   return (
     <section className="w-full max-w-4xl mx-auto py-12">
       <h2 className="text-2xl text-center font-bold text-gray-900 dark:text-white">
-        Chat with Pavise AI
+        Chat with Lunexa AI
       </h2>
       <p className="text-gray-600 text-center dark:text-gray-400 mt-2">
         Ask anything about your medical scans or related topics.
@@ -115,7 +115,7 @@ export function ChatPaviseAI() {
         <Button
           onClick={handleSendMessage}
           disabled={isLoading}
-          className="bg-teal-900 text-white px-4 py-2 rounded-md"
+          className="bg-sky-500 text-white px-4 py-2 rounded-md"
         >
           <Send className="w-5 h-5" />
         </Button>

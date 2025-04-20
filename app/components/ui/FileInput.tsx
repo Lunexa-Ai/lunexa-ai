@@ -221,7 +221,7 @@ export function FileUploadDemo() {
   return (
     <section className="w-full max-w-4xl mx-auto py-12" id="scan">
       <h1 className="text-3xl text-center font-bold text-gray-900 dark:text-white">
-        Pavise is Ready to Analyze your Scan
+        Lunexa is Ready to Analyze your Scan
       </h1>
 
       {!imageUploaded && <FileUpload onChange={handleFileUpload} />}

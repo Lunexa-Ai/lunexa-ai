@@ -8,7 +8,8 @@ const phases = [
     steps: [
       {
         title: "Launching",
-        description: "Implemented key functionalities to support future expansion.",
+        description:
+          "Implemented key functionalities to support future expansion.",
         time: "6 Months ago",
       },
     ],
@@ -65,37 +66,46 @@ const phases = [
 
 export default function Roadmap() {
   return (
-    <section className="py-16 px-6 md:px-16 lg:px-24 bg-teal-900 text-white" id="roadmap">
+    <section
+      className="py-16 px-6 md:px-16 lg:px-24 bg-white text-gray-900"
+      id="roadmap"
+    >
       <div>
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-4xl font-extrabold text-center mb-8 text-sky-500">
           Development Roadmap
         </h2>
-        <p className="text-center max-w-2xl mx-auto">
+        <p className="text-center max-w-3xl mx-auto text-lg text-gray-600">
           Our team is committed to integrating all Pavise features to ensure
           that advanced AI diagnostics are accessible to everyone worldwide.
         </p>
       </div>
-      <div className="mt-12 space-y-12">
+
+      <div className="mt-16 space-y-12">
         {phases.map((phase, index) => (
-          <div key={index} className="bg-teal-800 p-8 rounded-2xl shadow-lg">
-            <h3 className="text-3xl font-bold text-yellow-400">
+          <div
+            key={index}
+            className="bg-gradient-to-r from-sky-100 via-sky-300 to-sky-500 p-8 rounded-2xl shadow-xl"
+          >
+            <h3 className="text-3xl font-bold text-sky-600 mb-4">
               {phase.phase}
             </h3>
-            <p className="mt-2 text-white-300">{phase.description}</p>
-            <div className="mt-6 space-y-6">
+            <p className="text-gray-700 mb-6">{phase.description}</p>
+
+            <div className="space-y-6">
               {phase.steps.map((step, stepIndex) => (
                 <div
                   key={stepIndex}
-                  className={`p-6 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105 
-                    ${
-                      step.current
-                        ? "bg-yellow-500 text-black"
-                        : "bg-teal-700 text-white"
-                    }`}
+                  className={`p-6 rounded-xl shadow-lg transition-transform duration-300 ease-in-out ${
+                    step.current
+                      ? "bg-sky-500 text-white transform scale-105"
+                      : "bg-gray-100 text-gray-900 hover:scale-105"
+                  }`}
                 >
-                  <h4 className="text-2xl font-semibold">{step.title}</h4>
-                  <p className="mt-2 text-gray-100">{step.description}</p>
-                  <span className="block mt-4 text-sm font-medium text-white">
+                  <h4 className="text-2xl font-semibold text-sky-700">
+                    {step.title}
+                  </h4>
+                  <p className="mt-2 text-gray-600">{step.description}</p>
+                  <span className="block mt-4 text-sm font-medium text-sky-500">
                     {step.time}
                   </span>
                 </div>

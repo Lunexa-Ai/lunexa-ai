@@ -6,7 +6,10 @@ import { FaGithub, FaBook, FaTelegram, FaXTwitter } from "react-icons/fa6";
 
 export function FaqSection() {
   return (
-    <section className="w-full min-h-screen pt-24 pb-16 px-6 bg-teal-900 flex flex-col justify-center items-center text-white" id="faq">
+    <section
+      className="w-full min-h-screen pt-24 pb-16 px-6 bg-sky-500 flex flex-col justify-center items-center text-white"
+      id="faq"
+    >
       {/* Judul Section */}
       <h2 className="text-4xl font-bold text-center mb-8">
         Stay Connected & Get Support
@@ -25,7 +28,7 @@ export function FaqSection() {
               placeholder="Enter your email"
               className="flex-1 bg-white/80 text-gray-900"
             />
-            <Button className="bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-600">
+            <Button className="bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 transition-colors">
               Subscribe
             </Button>
           </div>
@@ -37,7 +40,7 @@ export function FaqSection() {
             icon={<FaGithub />}
             title="GitHub"
             desc="Explore our projects."
-            href="https://github.com/scanwithpavise" // Ganti dengan URL GitHub yang sesuai
+            href="https://github.com/scanwithpavise"
           />
           <ContactCard
             icon={<FaBook />}
@@ -49,13 +52,13 @@ export function FaqSection() {
             icon={<FaXTwitter />}
             title="X (Twitter)"
             desc="Follow us for updates."
-            href="https://x.com/ScanWithPavise" // Ganti dengan URL Twitter yang sesuai
+            href="https://x.com/ScanWithPavise"
           />
           <ContactCard
             icon={<FaTelegram />}
             title="Telegram"
             desc="Join our chat community."
-            href="https://t.me/PavisePortal" // Ganti dengan URL Telegram yang sesuai
+            href="https://t.me/PavisePortal"
           />
         </div>
       </div>
@@ -73,14 +76,14 @@ function ContactCard({
   icon: React.ReactNode;
   title: string;
   desc: string;
-  href: string; // Properti href ditambahkan di sini
+  href: string;
 }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="p-4 bg-white/20 backdrop-blur-lg rounded-xl shadow-lg hover:bg-white/30 transition-all"
+      className="p-4 bg-white/20 backdrop-blur-lg rounded-xl shadow-lg hover:bg-sky-600 hover:text-white transition-all"
     >
       <div className="flex items-center gap-2">
         {icon} <h3 className="font-semibold">{title}</h3>

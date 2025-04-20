@@ -1,12 +1,11 @@
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck, ClipboardCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
 export default function Hero() {
   const [copied, setCopied] = useState(false);
-  const certificationText = "2TUQ21D87yrbZM1F3RB93sbkiGXeTTfkb8wWqG2ipump";
+  const certificationText = "-";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(certificationText).then(() => {
@@ -16,101 +15,64 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center h-screen text-center px-6 overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-teal-700 to-cyan-700 opacity-70 animate-pulse"></div>
-      <div className="absolute top-0 left-1/4 w-64 h-64 bg-teal-400 opacity-40 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-cyan-400 opacity-50 rounded-full blur-3xl animate-float delay-200"></div>
-
-      {/* Logo Certificate */}
-      <motion.div
-        className="w-28 h-28 mb-4"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <Image
-          src="/images/pavise.jpeg"
-          alt="Crypto CA Certification"
-          width={800}
-          height={800}
-          className="rounded-full"
-        />
-      </motion.div>
-
-      <motion.h1
-        className="text-6xl font-bold text-white drop-shadow-lg"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        Pavise is the First AI-Powered Health Diagnostic
-      </motion.h1>
-      <motion.p
-        className="mt-4 text-lg text-gray-300 max-w-xl"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.3 }}
-      >
-        Engineered with cutting-edge AI technology, Pavise is designed for
-        exceptional accuracy and reliability in disease detection, empowering
-        healthcare professionals with precise diagnostics.
-      </motion.p>
-
-      {/* Certificate Badge & Info */}
-      <motion.div
-        className="mt-6 flex items-center gap-3 bg-white bg-opacity-20 px-4 py-2 rounded-lg shadow-md text-white cursor-pointer hover:bg-opacity-30 transition"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        onClick={handleCopy}
-      >
-        <ShieldCheck size={28} className="text-green-400" />
-        <span className="text-sm text-black font-medium">
-          {certificationText}
-        </span>
-        {copied && <ClipboardCheck size={20} className="text-green-500" />}
-      </motion.div>
-
-      {/* Copy Success Notification */}
-      {copied && (
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-sky-50 to-sky-100 px-6 py-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-7xl w-full">
+        {/* Left Image */}
         <motion.div
-          className="mt-3 px-4 py-2 text-sm bg-green-600 text-white rounded-lg shadow-md"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.3 }}
+          className="flex justify-center"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
         >
-          Copied to clipboard!
+          <Image
+            src="/images/lunexa.png"
+            alt="Lunexa AI"
+            width={400}
+            height={400}
+            className="rounded-3xl shadow-xl border-4 border-white"
+          />
         </motion.div>
-      )}
 
-      <motion.div
-        className="mt-6"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
-      >
-        <a href="#scan" className="px-14 py-4 text-xl font-semibold rounded-full flex items-center gap-3 bg-gradient-to-r from-teal-500 to-cyan-500 text-white shadow-xl hover:scale-110 transition-transform">
-          Scan Images <ArrowRight size={24} />
-        </a>
-      </motion.div>
+        {/* Right Text Content */}
+        <motion.div
+          className="text-center md:text-left"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="text-5xl sm:text-6xl font-semibold text-gray-800 leading-tight drop-shadow">
+            Welcome to <span className="text-sky-500 text-7xl font-semibold">LUNEXA AI</span>
+          </h1>
+          <p className="mt-6 text-lg text-gray-600 max-w-xl">
+            Revolutionizing health diagnostics with cutting-edge AI technology.
+            LUNEXA AI empowers medical professionals with accurate and rapid
+            detection of critical illnesses, all at your fingertips.
+          </p>
 
-      <style jsx>{`
-        @keyframes float {
-          0% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-20px);
-          }
-          100% {
-            transform: translateY(0);
-          }
-        }
-        .animate-float {
-          animation: float 4s ease-in-out infinite;
-        }
-      `}</style>
+          {/* Certification */}
+          <div
+            onClick={handleCopy}
+            className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-md border border-white/30 text-gray-700 rounded-full shadow-sm cursor-pointer hover:bg-white/80 transition"
+          >
+            <span className="text-sm font-medium">{certificationText}</span>
+            {copied && (
+              <span className="text-green-500 text-sm font-semibold">
+                Copied!
+              </span>
+            )}
+          </div>
+
+          {/* CTA */}
+          <div className="mt-8">
+            <a
+              href="#scan"
+              className="inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold text-white bg-sky-500 hover:bg-sky-600 rounded-full shadow-lg transition-transform hover:scale-105"
+            >
+              Start Scanning <ArrowRight size={22} />
+            </a>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 }

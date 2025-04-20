@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PAVISE",
+  title: "Lunexa",
   description:
     "Pavise is the First AI-Powered Health Diagnostic, Engineered with cutting-edge AI technology, Pavise is designed for exceptional accuracy and reliability in disease detection, empowering healthcare professionals with precise diagnostics.",
 };
