@@ -58,22 +58,12 @@ export function ModernFooter() {
         {/* Right - Social Links */}
         <div className="flex gap-6 mt-6 md:mt-0">
           <FooterIcon
-            href="-"
-            icon={<FaGithub />}
-            label="GitHub"
-          />
-          <FooterIcon
-            href="-"
-            icon={<FaBook />}
-            label="Docs"
-          />
-          <FooterIcon
-            href="-"
+            href="https://x.com/LunexaCare"
             icon={<FaXTwitter />}
             label="Twitter"
           />
           <FooterIcon
-            href="-"
+            href="https://t.me/LunexaPortaL"
             icon={<FaTelegram />}
             label="Telegram"
           />

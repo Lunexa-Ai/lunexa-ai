@@ -64,7 +64,7 @@ export default function Navbar() {
           href="/pages/whitepaper"
           className="text-white/80 hover:text-white font-medium transition duration-200"
         >
-          Whitepaper
+          How it Works
         </Link>
       </div>
 
@@ -120,7 +120,7 @@ export default function Navbar() {
           href="#roadmap"
           className="text-white/90 hover:text-white font-medium transition"
         >
-          Whitepaper
+          How it Works
         </a>
         <button className="bg-white text-sky-600 px-5 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition duration-200">
           Connect Wallet
