@@ -41,11 +41,11 @@ export default function Hero() {
           transition={{ duration: 1 }}
         >
           <h1 className="text-5xl sm:text-6xl font-semibold text-gray-800 leading-tight drop-shadow">
-            Welcome to <span className="text-sky-500 text-7xl font-semibold">LUNEXA AI</span>
+            Welcome to <span className="text-sky-500 text-7xl font-semibold">Lunexa</span>
           </h1>
           <p className="mt-6 text-lg text-gray-600 max-w-xl">
             Revolutionizing health diagnostics with cutting-edge AI technology.
-            LUNEXA AI empowers medical professionals with accurate and rapid
+            Lunexa empowers medical professionals with accurate and rapid
             detection of critical illnesses, all at your fingertips.
           </p>
 

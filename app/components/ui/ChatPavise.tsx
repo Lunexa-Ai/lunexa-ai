@@ -70,7 +70,7 @@ export function ChatPaviseAI() {
   return (
     <section className="w-full max-w-4xl mx-auto py-12">
       <h2 className="text-2xl text-center font-bold text-gray-900 dark:text-white">
-        Chat with Lunexa AI
+        Chat with Lunexa
       </h2>
       <p className="text-gray-600 text-center dark:text-gray-400 mt-2">
         Ask anything about your medical scans or related topics.

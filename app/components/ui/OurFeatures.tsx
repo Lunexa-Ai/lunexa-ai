@@ -12,12 +12,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const features = [
   {
     title: "Tumor Scanning",
-    description: "Detect tumors quickly and accurately using Lunexa AI.",
+    description: "Detect tumors quickly and accurately using Lunexa.",
     icon: <FaMicroscope className="text-4xl text-sky-500" />,
   },
   {
     title: "Health Consultation",
-    description: "Get personalized health recommendations from Lunexa AI.",
+    description: "Get personalized health recommendations from Lunexa.",
     icon: <FaUser className="text-4xl text-sky-500" />,
   },
   {

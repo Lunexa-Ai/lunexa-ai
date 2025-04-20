@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ export default function Navbar() {
       {/* Logo */}
       <div className="flex items-center space-x-3">
         <span className="text-white text-2xl font-extrabold tracking-wide">
-          LUNEXA <span className="text-white/80 text-sm">AI</span>
+          LUNEXA
         </span>
       </div>
 
@@ -59,6 +60,12 @@ export default function Navbar() {
         >
           Roadmap
         </a>
+        <Link
+          href="/pages/whitepaper"
+          className="text-white/80 hover:text-white font-medium transition duration-200"
+        >
+          Whitepaper
+        </Link>
       </div>
 
       {/* Desktop Button */}
@@ -108,6 +115,12 @@ export default function Navbar() {
           className="text-white/90 hover:text-white font-medium transition"
         >
           Roadmap
+        </a>
+        <a
+          href="#roadmap"
+          className="text-white/90 hover:text-white font-medium transition"
+        >
+          Whitepaper
         </a>
         <button className="bg-white text-sky-600 px-5 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition duration-200">
           Connect Wallet

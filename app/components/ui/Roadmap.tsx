@@ -18,7 +18,7 @@ const phases = [
   {
     phase: "Phase 2 - AI Diagnostic Platform Development",
     description:
-      "Launched the beta version of Lunexa AI diagnostics. Focused on refining algorithms and enhancing accuracy.",
+      "Launched the beta version of Lunexa diagnostics. Focused on refining algorithms and enhancing accuracy.",
     steps: [
       {
         title: "AI Diagnostic",
