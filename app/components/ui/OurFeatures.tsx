@@ -21,12 +21,6 @@ const features = [
     icon: <FaUser className="text-4xl text-sky-500" />,
   },
   {
-    title: "Free and Open Source",
-    description:
-      "Lunexa is a free and open source project inviting developers to contribute innovative code and ideas.",
-    icon: <FaCode className="text-4xl text-sky-500" />,
-  },
-  {
     title: "Community Participation",
     description:
       "Lunexa holders are at the heart of our strategic decisions, actively shaping the platform's future with their valuable insights.",

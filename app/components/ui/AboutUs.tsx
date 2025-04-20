@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function AboutUs() {
   return (
@@ -7,16 +8,28 @@ export default function AboutUs() {
       id="aboutUs"
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative">
+        <motion.div
+          className="relative"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <Image
-            src="https://images.unsplash.com/photo-1631653355789-3e32dcce22db?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/images/lunexa-mri.png"
             alt="About Us"
             width={800}
             height={800}
             className="rounded-3xl shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl"
           />
-        </div>
-        <div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        >
           <h2 className="text-5xl font-bold text-sky-500 mb-6">
             Discover Lunexa
           </h2>
@@ -34,23 +47,27 @@ export default function AboutUs() {
             doctors have the right insights, enhancing diagnostic precision and
             ultimately saving lives.
           </p>
-          <div className="mt-6">
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-center">
-                <span className="inline-block w-3 h-3 bg-sky-500 rounded-full mr-3"></span>
-                Revolutionary AI for life-saving diagnosis
-              </li>
-              <li className="flex items-center">
-                <span className="inline-block w-3 h-3 bg-sky-500 rounded-full mr-3"></span>
-                Improving healthcare decision-making globally
-              </li>
-              <li className="flex items-center">
-                <span className="inline-block w-3 h-3 bg-sky-500 rounded-full mr-3"></span>
-                Trusted by leading professionals in the medical field
-              </li>
-            </ul>
-          </div>
-        </div>
+          <motion.ul
+            className="space-y-3 text-gray-700 mt-6"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <li className="flex items-center">
+              <span className="inline-block w-3 h-3 bg-sky-500 rounded-full mr-3"></span>
+              Revolutionary AI for life-saving diagnosis
+            </li>
+            <li className="flex items-center">
+              <span className="inline-block w-3 h-3 bg-sky-500 rounded-full mr-3"></span>
+              Improving healthcare decision-making globally
+            </li>
+            <li className="flex items-center">
+              <span className="inline-block w-3 h-3 bg-sky-500 rounded-full mr-3"></span>
+              Trusted by leading professionals in the medical field
+            </li>
+          </motion.ul>
+        </motion.div>
       </div>
     </section>
   );

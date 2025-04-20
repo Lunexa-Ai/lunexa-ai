@@ -85,8 +85,8 @@ export function ChatPaviseAI() {
             key={msg.id}
             className={`p-3 w-fit max-w-xs ${
               msg.sender === "user"
-                ? "ml-auto bg-teal-900 text-white"
-                : "mr-auto bg-gray-200 text-black"
+                ? "ml-auto bg-sky-500 text-white"
+                : "mr-auto bg-white text-black"
             }`}
           >
             {msg.text}
@@ -95,7 +95,7 @@ export function ChatPaviseAI() {
 
         {isLoading && (
           <div className="mr-auto p-3 w-fit max-w-xs bg-gray-200 text-black rounded-md animate-pulse">
-            Pavise AI is typing...
+            Lunexa is typing...
           </div>
         )}
 
