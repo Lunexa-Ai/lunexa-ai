@@ -29,7 +29,7 @@ const features = [
   {
     title: "Token Burn Mechanism",
     description:
-      "To secure long-term value and control inflation, $LUNEXA employs a structured token burn mechanism that gradually reduces supply.",
+      "To secure long-term value and control inflation, $Lunexa employs a structured token burn mechanism that gradually reduces supply.",
     icon: <FaFire className="text-4xl text-sky-500" />,
   },
 ];
