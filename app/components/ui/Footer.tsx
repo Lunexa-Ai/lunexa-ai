@@ -49,9 +49,9 @@ export function ModernFooter() {
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         {/* Left - Brand & Copyright */}
         <div className="text-center md:text-left">
-          <h2 className="text-2xl font-bold">LUNEXA</h2>
+          <h2 className="text-2xl font-bold">Nara</h2>
           <p className="text-white/80 text-sm mt-1">
-            © 2025 LUNEXA. All rights reserved.
+            © 2025 Nara. All rights reserved.
           </p>
         </div>
 

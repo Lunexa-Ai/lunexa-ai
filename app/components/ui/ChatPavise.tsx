@@ -70,7 +70,7 @@ export function ChatPaviseAI() {
   return (
     <section className="w-full max-w-4xl mx-auto py-12">
       <h2 className="text-2xl text-center font-bold text-gray-900 dark:text-white">
-        Chat with Lunexa
+        Chat with Nara
       </h2>
       <p className="text-gray-600 text-center dark:text-gray-400 mt-2">
         Ask anything about your medical scans or related topics.
@@ -95,7 +95,7 @@ export function ChatPaviseAI() {
 
         {isLoading && (
           <div className="mr-auto p-3 w-fit max-w-xs bg-gray-200 text-black rounded-md animate-pulse">
-            Lunexa is typing...
+            Nara is typing...
           </div>
         )}
 

@@ -18,11 +18,11 @@ const phases = [
   {
     phase: "Phase 2 - AI Diagnostic Platform Development",
     description:
-      "Launched the beta version of Lunexa diagnostics. Focused on refining algorithms and enhancing accuracy.",
+      "Launched the beta version of Nara diagnostics. Focused on refining algorithms and enhancing accuracy.",
     steps: [
       {
         title: "AI Diagnostic",
-        description: "Our team has launched the beta version of Lunexa.",
+        description: "Our team has launched the beta version of Nara.",
         time: "1 Month ago",
         current: false,
       },
@@ -74,7 +74,7 @@ export default function Roadmap() {
           Development Roadmap
         </h2>
         <p className="text-center max-w-3xl mx-auto text-lg text-gray-600">
-          Our team is committed to integrating all Lunexa features to ensure
+          Our team is committed to integrating all Nara features to ensure
           that advanced AI diagnostics are accessible to everyone worldwide.
         </p>
       </div>

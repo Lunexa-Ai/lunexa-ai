@@ -19,7 +19,7 @@ export function FaqSection() {
         <div className="bg-white/20 backdrop-blur-lg p-6 rounded-xl shadow-lg text-center">
           <h3 className="text-xl font-semibold mb-3">Subscribe for Updates</h3>
           <p className="text-white/80 mb-4">
-            Enter your email to get the latest updates about Pavise AI.
+            Enter your email to get the latest updates about Nara.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Input

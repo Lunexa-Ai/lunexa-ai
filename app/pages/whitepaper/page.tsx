@@ -76,10 +76,10 @@ export default function WhitePaper() {
                 <p className="text-gray-700 text-lg">
                   <strong>Token Overview</strong>
                   <br />
-                  Token Name: Lunexa <br />
-                  Symbol: Lunexa <br />
+                  Token Name: Nara <br />
+                  Symbol: Nara <br />
                   Blockchain: Solana <br />
-                  Total Supply: 1,000,000,000 $Lunexa <br />
+                  Total Supply: 1,000,000,000 $Nara <br />
                   Launch Type: Fairlaunch
                 </p>
               </div>
@@ -88,7 +88,7 @@ export default function WhitePaper() {
                 <p className="text-gray-700 text-lg">
                   <strong>1. Community Participation & Governance</strong>
                   <br />
-                  $Lunexa holders can vote, propose changes, and fund R&D.
+                  $Nara holders can vote, propose changes, and fund R&D.
                 </p>
               </div>
 
@@ -121,7 +121,7 @@ export default function WhitePaper() {
                 <p className="text-gray-700 text-lg">
                   <strong>Conclusion</strong>
                   <br />
-                  $Lunexa bridges AI and decentralized governance with fair
+                  $Nara bridges AI and decentralized governance with fair
                   access and long-term growth.
                 </p>
               </div>

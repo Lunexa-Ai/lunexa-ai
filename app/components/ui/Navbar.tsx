@@ -30,7 +30,7 @@ export default function Navbar() {
       {/* Logo */}
       <div className="flex items-center space-x-3">
         <span className="text-white text-2xl font-extrabold tracking-wide">
-          LUNEXA
+          NARA
         </span>
       </div>
 

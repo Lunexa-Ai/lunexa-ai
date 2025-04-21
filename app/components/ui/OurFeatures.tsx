@@ -12,24 +12,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const features = [
   {
     title: "Tumor Scanning",
-    description: "Detect tumors quickly and accurately using Lunexa.",
+    description: "Detect tumors quickly and accurately using Nara.",
     icon: <FaMicroscope className="text-4xl text-sky-500" />,
   },
   {
     title: "Health Consultation",
-    description: "Get personalized health recommendations from Lunexa.",
+    description: "Get personalized health recommendations from Nara.",
     icon: <FaUser className="text-4xl text-sky-500" />,
   },
   {
     title: "Community Participation",
     description:
-      "Lunexa holders are at the heart of our strategic decisions, actively shaping the platform's future with their valuable insights.",
+      "Nara holders are at the heart of our strategic decisions, actively shaping the platform's future with their valuable insights.",
     icon: <FaPeopleArrows className="text-4xl text-sky-500" />,
   },
   {
     title: "Token Burn Mechanism",
     description:
-      "To secure long-term value and control inflation, $Lunexa employs a structured token burn mechanism that gradually reduces supply.",
+      "To secure long-term value and control inflation, $Nara employs a structured token burn mechanism that gradually reduces supply.",
     icon: <FaFire className="text-4xl text-sky-500" />,
   },
 ];
@@ -45,7 +45,7 @@ export function OurFeatures() {
           Discover Our Powerful Features
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed">
-          Explore the groundbreaking features of Lunexa that empower your health
+          Explore the groundbreaking features of Nara that empower your health
           journey with cutting-edge AI.
         </p>
       </div>

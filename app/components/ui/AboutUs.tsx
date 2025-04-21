@@ -31,17 +31,17 @@ export default function AboutUs() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           <h2 className="text-5xl font-bold text-sky-500 mb-6">
-            Discover Lunexa
+            Discover Nara
           </h2>
           <p className="text-lg text-gray-700 mb-6 text-justify leading-relaxed">
             Imagine a world where diagnosing cancer is faster, more accurate,
-            and accessible globally. Lunexa makes this possible by harnessing
+            and accessible globally. Nara makes this possible by harnessing
             the power of cutting-edge AI and computer vision. With deep learning
-            technologies, Lunexa analyzes medical images like X-rays, MRIs, and
+            technologies, Nara analyzes medical images like X-rays, MRIs, and
             CT scans to deliver real-time, reliable results.
           </p>
           <p className="text-lg text-gray-700 mb-6 text-justify leading-relaxed">
-            Lunexa’s AI-driven system serves as a second set of eyes, empowering
+            Nara’s AI-driven system serves as a second set of eyes, empowering
             healthcare professionals to make confident, quick decisions. Its
             seamless integration with medical imaging technologies ensures
             doctors have the right insights, enhancing diagnostic precision and
