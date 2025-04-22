@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function Hero() {
   const [copied, setCopied] = useState(false);
-  const certificationText = "-";
+  const certificationText = "43Qc8RKNeZZoubS4m2wEx38bbKHnP7moQz1UyVDPpump";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(certificationText).then(() => {
