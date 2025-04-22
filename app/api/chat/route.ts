@@ -19,7 +19,7 @@ export async function POST(req: Request) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "deepseek/deepseek-chat-v3-0324:free",
+          model: "deepseek/deepseek-v3-base:free",
           messages,
         }),
       }
