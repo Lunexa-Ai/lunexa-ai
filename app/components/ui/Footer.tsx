@@ -63,7 +63,7 @@ export function ModernFooter() {
             label="Twitter"
           />
           <FooterIcon
-            href="https://t.me/scanwithnara"
+            href="https://t.me/NaraPortal"
             icon={<FaTelegram />}
             label="Telegram"
           />
