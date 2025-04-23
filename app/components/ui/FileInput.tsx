@@ -16,7 +16,13 @@ export function FileUploadDemo() {
   const [files, setFiles] = useState<File[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [predictions, setPredictions] = useState<
-    { label: string; confidence: number; box: number[]; size: number }[] | null
+    | {
+        label: string;
+        confidence: number;
+        box: number[];
+        size: number;
+      }[]
+    | null
   >(null);
 
   const imageRef = useRef<HTMLImageElement | null>(null);
@@ -208,10 +214,10 @@ export function FileUploadDemo() {
       const width = (xMax - xMin) * canvas.width;
       const height = (yMax - yMin) * canvas.height;
 
-      ctx.strokeStyle = "yellow";
+      ctx.strokeStyle = "green";
       ctx.lineWidth = 3;
       ctx.strokeRect(x, y, width, height);
-      ctx.fillStyle = "rgb(242, 255, 0)";
+      ctx.fillStyle = "rgb(0, 147, 47)";
       ctx.fillRect(x, y - 20, ctx.measureText(label).width + 50, 20);
       ctx.fillStyle = "black";
       ctx.fillText(`${label} (${confidence * 100}%)`, x + 5, y - 5);
@@ -227,35 +233,46 @@ export function FileUploadDemo() {
       {!imageUploaded && <FileUpload onChange={handleFileUpload} />}
 
       {imageUploaded && (
-        <div className="relative mt-6">
-          <img
-            ref={imageRef}
-            alt="Preview"
-            className="max-w-full mx-auto rounded-lg shadow-md"
-          />
-          <canvas
-            ref={canvasRef}
-            className="absolute top-0 left-0 rounded-lg"
-          />
-        </div>
-      )}
+        <div className="flex flex-col md:flex-row mt-6 gap-6">
+          {/* LEFT SIDE: Image & Canvas */}
+          <div className="relative w-full md:w-1/2">
+            <img
+              ref={imageRef}
+              alt="Preview"
+              className="w-full rounded-lg shadow-md"
+            />
+            <canvas
+              ref={canvasRef}
+              className="absolute top-0 left-0 rounded-lg"
+            />
+          </div>
 
-      {showResults && predictions && predictions.length > 0 && (
-        <div className="mt-6 space-y-4">
-          {predictions.map((prediction, index) => (
-            <Card key={index} className="shadow-lg bg-white dark:bg-gray-800">
-              <CardContent>
-                <h2 className="text-xl font-semibold text-center">
-                  {prediction.label}
-                </h2>
-                <p className="text-center">
-                  Confidence: {prediction.confidence * 100}%
-                </p>
-                <p className="text-center">Tumor Size: {prediction.size} cm²</p>
-                {aiResponse && aiResponse.text && <p>{aiResponse.text}</p>}
-              </CardContent>
-            </Card>
-          ))}
+          {/* RIGHT SIDE: Prediction Results */}
+          {showResults && predictions && predictions.length > 0 && (
+            <div className="w-full md:w-1/2 space-y-4">
+              {predictions.map((prediction, index) => (
+                <Card
+                  key={index}
+                  className="shadow-lg bg-white dark:bg-gray-800"
+                >
+                  <CardContent>
+                    <h2 className="text-xl font-semibold text-center">
+                      {prediction.label}
+                    </h2>
+                    <p className="text-center">
+                      Confidence: {prediction.confidence * 100}%
+                    </p>
+                    <p className="text-center">
+                      Tumor Size: {prediction.size} cm²
+                    </p>
+                    {aiResponse && aiResponse.text && (
+                      <p className="mt-2 text-sm">{aiResponse.text}</p>
+                    )}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
